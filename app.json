@@ -1,0 +1,13 @@
+{
+  "name": "programa",
+  "description": "vvv",
+  "scripts": {
+    "postdeploy": "vvv",
+    "pr-predestroy": "fff"
+  },
+  "env": {
+  },
+  "addons": [
+
+  ]
+}
