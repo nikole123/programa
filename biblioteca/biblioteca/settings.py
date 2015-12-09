@@ -128,6 +128,8 @@ INSTALLED_APPS = (
     'biblioteca.apps.reportes',
     'django.contrib.humanize',
     'gunicorn',
+    'reportlab',
+    'psycopg2',
     
 )
 
