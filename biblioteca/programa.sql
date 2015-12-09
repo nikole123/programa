@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-12-2015 a las 20:22:09
+-- Tiempo de generación: 09-12-2015 a las 21:40:45
 -- Versión del servidor: 5.5.32
 -- Versión de PHP: 5.4.19
 
@@ -283,7 +283,15 @@ CREATE TABLE IF NOT EXISTS `libros_bibliotecario` (
   `correo` varchar(200) NOT NULL,
   `genero` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `libros_bibliotecario`
+--
+
+INSERT INTO `libros_bibliotecario` (`id`, `nombre`, `apellidos`, `telefono`, `direcccion`, `correo`, `genero`) VALUES
+(1, 'guido', 'imbachi', '3456789', 'cafgghh', 'core@hotmail.com', 'masculino'),
+(2, 'nikole', 'cadena', '456789', 'vbnndf', 'ee@hotmail.com', 'femenimo');
 
 -- --------------------------------------------------------
 
@@ -332,7 +340,7 @@ CREATE TABLE IF NOT EXISTS `libros_prestamo` (
   PRIMARY KEY (`id`),
   KEY `libros_prestamo_19e89acf` (`espacio_id`),
   KEY `libros_prestamo_c69e2c81` (`usuario_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `libros_prestamo`
@@ -340,7 +348,8 @@ CREATE TABLE IF NOT EXISTS `libros_prestamo` (
 
 INSERT INTO `libros_prestamo` (`id`, `fecha_prestamo`, `fecha_devolucion`, `espacio_id`, `bibliotecario`, `usuario_id`, `estado_prestamo`) VALUES
 (1, '2015-12-09', '2015-12-11', 1, 'carlos', 1, 'Efectuado'),
-(2, '2015-12-09', '2015-12-11', 1, 'nikole', 2, 'Efectuado');
+(2, '2015-12-09', '2015-12-11', 1, 'nikole', 2, 'Efectuado'),
+(10, '2015-11-26', '2015-12-12', 1, 'guido', 1, 'reservado');
 
 -- --------------------------------------------------------
 
